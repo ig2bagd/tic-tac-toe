@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // https://www.youtube.com/watch?v=-KIEdaL0vXs
+      "label": "vite dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,      
+      "problemMatcher": {
+        "pattern": [
+          {
+            "regexp": ".*",
+            "file": 1,
+            "location": 2,
+            "message": 3
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "vite v\\d+.* dev server running at:",
+          "endsPattern": "ready in .*"
+        }
+      }
+    }
+  ]
+}

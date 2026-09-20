@@ -14,6 +14,8 @@ import NotFoundPage from './pages/NotFoundPage';
 import ProfilePage from './pages/ProfilePage';
 import ProfilesPage from './pages/ProfilesPage';
 
+import TodoList from './Todo.jsx';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -42,6 +44,7 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
     */}
 
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+    <TodoList />
   </StrictMode>,
 )
